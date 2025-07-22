@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Replace with your actual MongoDB connection string
-const uri = 'mongodb+srv://jatintheboy:vlX9hIJm8czbV7Wf@cluster0.qzq0z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = '/';
 const client = new MongoClient(uri);
 
 app.post('/api/players', async (req, res) => {
