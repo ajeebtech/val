@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "vlr ai",
+  "version": "1.0",
+  "description": "A Chrome extension that only works on www.vlr.gg.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.vlr.gg/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.vlr.gg/*"
+  ],
+  "permissions": [
+    "scripting"
+  ]
+} 
